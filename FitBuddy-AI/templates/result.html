@@ -1,0 +1,41 @@
+<section class="feedback-section">
+
+    <h2>📝 Give Feedback</h2>
+
+    <form
+        action="/submit-feedback"
+        method="post"
+    >
+
+        <input
+            type="hidden"
+            name="user_id"
+            value="{{ user.user_id }}"
+        >
+
+        <textarea
+            name="feedback"
+            rows="6"
+            placeholder="Example: Add more cardio or include yoga..."
+            required
+        ></textarea>
+
+        <button
+            type="submit"
+            class="primary-button feedback-button"
+        >
+            Update My Plan
+        </button>
+
+    </form>
+
+</section>
+
+
+<div class="generate-another">
+
+    <a href="/">
+        ← Generate Another Plan
+    </a>
+
+</div>
